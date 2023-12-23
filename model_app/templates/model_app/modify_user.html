@@ -1,0 +1,13 @@
+{%  extends 'model_app/layout.html' %}
+
+{%  block content %}
+
+{{ message }}
+<form action="" method="post">
+{% csrf_token %}
+{{ myform.as_p }}
+
+
+<input type="submit" />
+</form>
+{% endblock %}
